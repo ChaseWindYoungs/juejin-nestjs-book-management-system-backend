@@ -16,7 +16,7 @@ export class DbService {
       return [];
     }
 
-    const str = await readFile(filePath, { encoding: 'utf8' });
+    const str = await readFile(filePath, { encoding: 'utf-8' });
     if (!str) return [];
 
     return JSON.parse(str);
@@ -24,7 +24,7 @@ export class DbService {
   async write(obj: Record<string, any>) {
     const filePath = this.options.path;
     await writeFile(filePath, JSON.stringify(obj, null, 2), {
-      encoding: 'utf8',
+      encoding: 'utf-8',
     });
   }
 }

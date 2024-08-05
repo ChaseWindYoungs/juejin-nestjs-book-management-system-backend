@@ -4,6 +4,7 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { DbService } from 'src/db/db.service';
 import { User } from './entities/user.entity';
+import { LoginUserDto } from './dto/login-user.dto';
 
 @Injectable()
 export class UserService {
@@ -45,5 +46,19 @@ export class UserService {
 
     await this.dbService.write(users);
     return user;
+  }
+  async login(loginUserDto: LoginUserDto) {
+    const users: User[] = await this.dbService.read();
+    const foundUser = users.find(
+      (user) => user.username === loginUserDto.username,
+    );
+    if (!foundUser) {
+      throw new BadRequestException('User does not exist');
+    }
+
+    if (foundUser.password !== loginUserDto.password) {
+      throw new BadRequestException('Incorrect password');
+    }
+    return foundUser;
   }
 }
