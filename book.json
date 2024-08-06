@@ -4,6 +4,34 @@
     "author": "我是你爷爷",
     "name": "等待",
     "description": "虽然代码比较多，但是都比较简单，就是读取文件里 books 的内容，做下增删改，然后再写入文件。",
-    "cover": "https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/506b4295300d45729915e8131bd817e3~tplv-k3u1fbpfcp-jj-mark:3024:0:0:0:q75.awebp#?w=1240&h=946&s=185101&e=png&b=fdfdfd"
+    "cover": "uploads/1722908170501-17594402-1040g2jo30ocplucli8604a4sch6kobphjg5laj8.png"
+  },
+  {
+    "id": 1251515,
+    "author": "打发发的",
+    "name": "阿西电风扇",
+    "description": "Nest 在这些常见的 Node.js 框架（Express/Fastify）之上提供了一个抽象级别，但也直接向开发者公开了它们的 API。这使开发者可以自由使用可用于底层平台的无数第三方模块。",
+    "cover": "uploads/1722915606452-792185402-talk_man_on_icon.png"
+  },
+  {
+    "id": 441017244227,
+    "author": "xcvxv",
+    "name": "zxczx",
+    "description": "xcvxcvxcvcxvxcv",
+    "cover": "uploads/1722915477106-807597065-1040g2jo30ocplucli8604a4sch6kobphjg5laj8.png"
+  },
+  {
+    "id": 482083078155,
+    "author": "xcvc",
+    "name": "tobe",
+    "description": "xcvxcvcvxc",
+    "cover": "uploads/1722914062361-987790743-talk_man_on_icon.png"
+  },
+  {
+    "id": 785924811395,
+    "author": "cxzxc",
+    "name": "czxzx",
+    "description": "zxzxczcxcxzx",
+    "cover": "uploads/1722914388465-206132739-ferrari_ao.png"
   }
 ]
